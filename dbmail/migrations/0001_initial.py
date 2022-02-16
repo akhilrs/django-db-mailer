@@ -270,7 +270,7 @@ class Migration(migrations.Migration):
                 ('kwargs', models.TextField()),
                 ('params', models.TextField()),
                 ('eta', models.DateTimeField(db_index=True)),
-                ('done', models.NullBooleanField(default=None)),
+                ('done', models.BooleanField(default=None, null=True)),
                 ('created', models.DateTimeField(auto_now_add=True)),
             ],
             options={
