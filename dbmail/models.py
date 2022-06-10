@@ -377,7 +377,7 @@ class MailLog(models.Model):
         _('Provider'), max_length=250, editable=False, db_index=True,
         default=None, null=True, blank=True)
     custom_identifier = models.CharField(
-        _('Custom Identifier', max_length=60, null=True, blank=True)
+        _('Custom Identifier'), max_length=60, null=True, blank=True
     )
 
     @staticmethod
