@@ -592,6 +592,8 @@ class SignalLog(models.Model):
         verbose_name_plural = _('Signal logs')
 
 
+
+
 class SignalDeferredDispatch(models.Model):
     args = models.TextField()
     kwargs = models.TextField()
@@ -620,7 +622,9 @@ class SignalDeferredDispatch(models.Model):
         )
 
     class Meta:
-        index_together = (('eta', 'done'),)
+        indexes = [
+            models.Index(fields=['eta', 'done'], name='signal_eta_done_idx')
+        ]
 
 
 @python_2_unicode_compatible
