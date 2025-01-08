@@ -9,9 +9,9 @@ setup(
     "django templates stored in a database.",
     keywords="django db mail email html text tts sms push templates mailer",
     long_description=open("README.rst", encoding="utf-8", errors="ignore").read(),
-    author="GoTLiuM InSPiRiT",
-    author_email="gotlium@gmail.com",
-    url="http://github.com/LPgenerator/django-db-mailer/",
+    author="0x1235",
+    author_email="other@ars.vg",
+    url="http://github.com/akhilrs/django-db-mailer/",
     packages=find_packages(exclude=["demo"]),
     package_data={
         "dbmail": [
