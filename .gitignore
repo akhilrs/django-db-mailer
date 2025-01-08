@@ -53,3 +53,4 @@ mail_files
 certs/*
 demo/*.zip
 .venv
+*~
